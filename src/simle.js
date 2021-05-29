@@ -9,20 +9,19 @@ const eyeOffsetX = 100;
 const eyeOffsetY = 50;
 
 const mouthArc = arc()
-  .innerRadius(90)
-  .outerRadius(120)
-  .startAngle(0)
-  .endAngle(Math.PI * 2);
+  .innerRadius(190)
+  .outerRadius(170)
+  .startAngle(Math.PI / 1.5)
+  .endAngle(Math.PI * 1.3);
 
 function SimileFace() {
   return (
     <div>
       <h1> This is a simile face using svg</h1>
-      <g transform={`translate(${centerX},${centerY})`}>
-        <svg width={svgWidth} height={svgHeight}>
+
+      <svg width={svgWidth} height={svgHeight}>
+        <g transform={`translate(${centerX},${centerY})`}>
           <circle
-            cx={centerX}
-            cy={centerY}
             r={centerY / 2}
             fill="#ffb300"
             stroke="black"
@@ -30,24 +29,24 @@ function SimileFace() {
           />
 
           <circle
-            cx={centerX - eyeOffsetX}
-            cy={centerY - eyeOffsetY}
+            cx={-eyeOffsetX}
+            cy={-eyeOffsetY}
             r={svgHeight / 14}
             fill="black"
             stroke="white"
             strokeWidth="25"
           />
           <circle
-            cx={centerX + eyeOffsetX}
-            cy={centerY - eyeOffsetY}
+            cx={eyeOffsetX}
+            cy={-eyeOffsetY}
             r={svgHeight / 14}
             fill="black"
             stroke="white"
             strokeWidth="25"
           />
           <path d={mouthArc()} />
-        </svg>
-      </g>
+        </g>
+      </svg>
     </div>
   );
 }
