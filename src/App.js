@@ -1,10 +1,12 @@
 import "./App.css";
-import SimileFace from "./simle";
+import CssColor from "./dataload/cssColor";
+import MouseFollower from "./mouseFollower/MouseFollower";
+//import SimileFace from "./simle";
 
 function App() {
   return (
     <div className="App">
-      <SimileFace />
+      <MouseFollower />
     </div>
   );
 }

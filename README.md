@@ -6,4 +6,6 @@
 ## Modules
 
 1. [Simile Face using SVG and D3](https://github.com/gunjanmimo/d3-visualization/blob/main/src/simle.js)
-2. [Bar plot]()
+2. [Data Loading using Async function]()
+3. [Mouse Follower]()
+4. [Bar plot]()
