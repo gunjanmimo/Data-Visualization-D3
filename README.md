@@ -6,6 +6,8 @@
 ## Modules
 
 1. [Simile Face using SVG and D3](https://github.com/gunjanmimo/d3-visualization/blob/main/src/simle.js)
-2. [Data Loading using Async function]()
-3. [Mouse Follower]()
-4. [Bar plot]()
+2. [Data Loading using Async function 1](https://github.com/gunjanmimo/d3-visualization/tree/main/src/dataloading)
+3. [Data Loading using Async function 2](https://github.com/gunjanmimo/d3-visualization/tree/main/src/dataload)
+4. [Mouse Follower](https://github.com/gunjanmimo/d3-visualization/tree/main/src/mouseFollower)
+5. [CSV parsing with D3](https://github.com/gunjanmimo/d3-visualization/tree/main/src/csvParser)
+6. [Vega Lite API for Visualization](https://github.com/gunjanmimo/d3-visualization/tree/main/src/vegaLite)
