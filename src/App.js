@@ -1,6 +1,7 @@
 import "./App.css";
 
-import BarChart from "./BarChart/BarChart";
+//import BarChart from "./BarChart/BarChart";
+import DataFilter from "./DataFilter/DataFilter";
 //import CSSPieChart from "./CSSPieChart/CSSPieChart";
 //import CsvParser from "./csvParser/CsvParser";
 //import DataLoading from "./dataloading/DataLoading";
@@ -11,7 +12,7 @@ import BarChart from "./BarChart/BarChart";
 function App() {
   return (
     <div className="App">
-      <BarChart />
+      <DataFilter />
     </div>
   );
 }
