@@ -1,7 +1,9 @@
 import "./App.css";
+//import D3Dom from "./D3Dom/D3Dom";
+import LineChart from "./LineChart/LineChart";
 
 //import BarChart from "./BarChart/BarChart";
-import DataFilter from "./DataFilter/DataFilter";
+//import DataFilter from "./DataFilter/DataFilter";
 //import CSSPieChart from "./CSSPieChart/CSSPieChart";
 //import CsvParser from "./csvParser/CsvParser";
 //import DataLoading from "./dataloading/DataLoading";
@@ -12,7 +14,7 @@ import DataFilter from "./DataFilter/DataFilter";
 function App() {
   return (
     <div className="App">
-      <DataFilter />
+      <LineChart />
     </div>
   );
 }
