@@ -11,3 +11,4 @@
 4. [Mouse Follower](https://github.com/gunjanmimo/d3-visualization/tree/main/src/mouseFollower)
 5. [CSV parsing with D3](https://github.com/gunjanmimo/d3-visualization/tree/main/src/csvParser)
 6. [Vega Lite API for Visualization](https://github.com/gunjanmimo/d3-visualization/tree/main/src/vegaLite)
+7. [Interactive Data Filter]()
