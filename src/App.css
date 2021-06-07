@@ -38,6 +38,7 @@
 }
 svg {
   background-color: #eee;
+  overflow: visible;
 }
 /* body {
   overflow: hidden;
