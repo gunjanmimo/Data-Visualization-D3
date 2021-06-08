@@ -16,7 +16,7 @@ const height = 400;
 
 const AnimatedBarChart = () => {
   const [data, setData] = useState(
-    [...Array(50)].map((e) => (Math.random() * 100) | 0)
+    [...Array(25)].map((e) => (Math.random() * 100) | 0)
   );
   const ref = useRef();
 
@@ -55,6 +55,20 @@ const AnimatedBarChart = () => {
       })
       .attr("y", -height)
       .attr("width", xScale.bandwidth())
+      .on("mouseenter", (value, index) => {
+        svg
+          .selectAll(".tooltip")
+          .data([value])
+          .join((enter) => enter.append("text").attr("y", yScale(value) - 4))
+          .attr("class", "tooltip")
+          .text(value)
+          .attr("x", xScale(index) + xScale.bandwidth() / 2)
+          .attr("text-anchor", "middle")
+          .transition()
+          .attr("y", yScale(value) - 8)
+          .attr("opacity", 1);
+      })
+      .on("mouseleave", () => svg.select(".tooltip").remove())
       .transition()
       .attr("fill", colorScale)
       .attr("height", (value) => height - yScale(value));
