@@ -1,5 +1,6 @@
-import AnimatedBarChart from "./AnimatedBarChart/AnimatedBarChart";
+//import AnimatedBarChart from "./AnimatedBarChart/AnimatedBarChart";
 import "./App.css";
+import ResponsiveBarChart from "./ResponsiveBarChart/ResponsiveBarChart";
 //import D3Dom from "./D3Dom/D3Dom";
 //import LineChart from "./LineChart/LineChart";
 
@@ -15,7 +16,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <AnimatedBarChart />
+      <ResponsiveBarChart />
     </div>
   );
 }
